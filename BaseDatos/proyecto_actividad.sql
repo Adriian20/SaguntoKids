@@ -33,16 +33,12 @@ CREATE TABLE `actividad` (
   `descripcion` varchar(499) NOT NULL,
   `precio` float NOT NULL,
   `matricula` float DEFAULT NULL,
-  `tipo_actividad` varchar(45) NOT NULL,
   `id_empresa_actividad` int NOT NULL,
   `tipo_actividad` enum('deportivas','formativas','ambas') DEFAULT NOT NULL,
   PRIMARY KEY (`id`),
   KEY `idActividadEmpresa_idx` (`id_empresa_actividad`),
   CONSTRAINT `id_empresa_actividad` FOREIGN KEY (`id_empresa_actividad`) REFERENCES `empresa` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-  KEY `id_actividad_empresa_idx` (`id_empresa_actividad`),
-  CONSTRAINT `id_empresa_actividad` FOREIGN KEY (`id_empresa_actividad`) REFERENCES `empresa` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
