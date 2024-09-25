@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Data
-@Table(name = "empresa", schema = "proyecto", catalog = "")
+@Table(name = "empresa", schema = "saguntokids", catalog = "")
 public class EmpresaEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id

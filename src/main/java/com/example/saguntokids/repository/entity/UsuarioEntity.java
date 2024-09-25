@@ -7,7 +7,7 @@ import java.util.Collection;
 
 @Entity
 @Data
-@Table(name = "usuario", schema = "proyecto", catalog = "")
+@Table(name = "usuario", schema = "saguntokids", catalog = "")
 public class UsuarioEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -34,7 +34,7 @@ public class UsuarioEntity {
     @Basic
     @Column(name = "cuenta_bancaria")
     private String cuentaBancaria;
-    
+
     @OneToMany(mappedBy = "idUsuarioPerfil")
     private Collection<PerfilesEntity> perfilesByIdusuario;
     @OneToMany(mappedBy = "idUsuario")
@@ -53,6 +53,7 @@ public class UsuarioEntity {
             return false;
         return true;
     }
+
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -61,5 +62,4 @@ public class UsuarioEntity {
         return result;
     }
 
-    
 }

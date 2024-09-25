@@ -7,7 +7,7 @@ import java.util.Objects;
 
 @Entity
 @Data
-@Table(name = "tarjetas", schema = "proyecto", catalog = "")
+@Table(name = "tarjetas", schema = "saguntokids", catalog = "")
 public class TarjetasEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -42,6 +42,7 @@ public class TarjetasEntity {
             return false;
         return true;
     }
+
     @Override
     public int hashCode() {
         final int prime = 31;

@@ -11,7 +11,7 @@ import java.util.Set;
 /*
 @Entity
 @Data
-@Table(name = "perfiles", schema = "proyecto", catalog = "")
+@Table(name = "perfiles", schema = "saguntokids", catalog = "")
 public class PerfilesEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

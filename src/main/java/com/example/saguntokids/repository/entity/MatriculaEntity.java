@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name = "matricula", schema = "proyecto", catalog = "")
+@Table(name = "matricula", schema = "saguntokids", catalog = "")
 public class MatriculaEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -18,6 +18,7 @@ public class MatriculaEntity {
     @ManyToOne
     @JoinColumn(name = "id_actividades_matriculadas", referencedColumnName = "id", nullable = false)
     private ActividadEntity idActividadesMatriculadas;
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
@@ -31,6 +32,7 @@ public class MatriculaEntity {
             return false;
         return true;
     }
+
     @Override
     public int hashCode() {
         final int prime = 31;
