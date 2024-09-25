@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" th:href="@{/css/general.css}" />
+    <link rel="stylesheet" th:href="@{/css/elegir.css}">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <header th:replace="~{base :: header}"></header>
+    <nav th:replace="~{base :: nav}"></nav>
+    <main>
+        <div class="contenedor">
+            <div class="formulario" id="usuarioForm">
+                <div class="formulario-cambiar">
+                    <button onclick="switchForm('usuario')">Soy usuario</button>
+                    <button onclick="switchForm('empresa')">Soy empresa</button>
+                </div>
+                <!--<h2>Soy usuario</h2>-->
+                <form id="fUsu">
+                    <input type="email" name="email" id="correo" placeholder="Correo electrónico" required>
+                    <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                    <button id="btnIniciarSesion" type="button">INICIAR SESIÓN</button>
+                    <p>¿No tienes una cuenta?</p>
+                    <button><a th:href="@{registroUsu}" target="_self">REGISTRARME</button>
+                </form>
+            </div>
+            <div class="formulario" id="empresaForm" style="display: none;">
+                <div class="formulario-cambiar">
+                    <button onclick="switchForm('usuario')">Soy usuario</button>
+                    <button onclick="switchForm('empresa')">Soy empresa</button>
+                </div>
+                <!--<h2>Soy empresa</h2>-->
+                <form id="fEmp">
+                    <button><a id="incEmp" th:href="@{empresas/inicioSesionEmpresa}" target="_self">INICIO
+                            SESIÓN</button>
+                    <p>Olvidé la contraseña</p>
+                    <p>¿No tienes una cuenta?</p>
+                    <button><a id="nuevaEmp" th:href="@{empresas/registroEmpresa}" target="_self">REGISTRO COMO
+                            EMPRESA</button>
+                </form>
+            </div>
+        </div>
+
+
+
+        <script>
+            function switchForm(form) {
+                if (form === 'usuario') {
+                    document.getElementById('usuarioForm').style.display = 'block';
+                    document.getElementById('empresaForm').style.display = 'none';
+                } else if (form === 'empresa') {
+                    document.getElementById('usuarioForm').style.display = 'none';
+                    document.getElementById('empresaForm').style.display = 'block';
+                }
+            }
+        </script>
+    </main>
+
+    <footer th:replace="~{base :: footer}"></footer>
+    <script th:src="@{/js/nav.js}"></script>
+    <script th:src="@{/JavaScript/Jquery.js}"></script>
+    <script th:src="@{/js/loginUsuario.js}"></script>
+</body>
+
+</html>

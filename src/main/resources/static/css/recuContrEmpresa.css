@@ -1,0 +1,62 @@
+body {
+    background-color: #f2f2f2;
+}
+
+section {
+    text-align: center;
+    border: 15px solid #453DAA;
+    padding: 5%;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 260px;
+    margin: 0 auto;
+    border: 1px solid #453DAA;
+    border-radius: 8px;
+    height: 25px;
+    font-size: medium;
+}
+
+main a {
+    color: black;
+    margin: 0 auto;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    min-width: 360px;
+    text-align: center;
+}
+
+span {
+    margin-top: 5px;
+    color: red;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: Comfortaa;
+    font-weight: bold;
+}
+
+button {
+    margin: 2% auto;
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        padding: 2% 20% 5% 20%;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 95%;
+        height: 30px;
+        font-size: large;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagunto Kids</title>
+    <link rel="stylesheet" th:href="@{/css/general.css}" />
+    <link rel="stylesheet" th:href="@{/css/especifico_actividades.css}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa" />
+</head>
+
+<body>
+    <header th:replace="~{base :: header}"></header>
+    <nav th:replace="~{base :: nav}"></nav>
+    <main>
+        <section>
+            <article>
+                <hr>
+                <h2>ACTIVIDADES POPULARES</h2>
+                <hr>
+            </article>
+            <article>
+                <h5>Ordenar</h5>
+                <img>
+                <h5>Filtrar</h5>
+                <img>
+                <h5>Mapa</h5>
+                <img>
+            </article>
+        </section>
+        <section>
+        </section>
+    </main>
+    <footer th:replace="~{base :: footer}"></footer>
+    <script th:src="@{/js/nav.js}"></script>
+    <script type="module" th:src="@{/js/actDep.js}"></script>
+</body>
+
+</html>

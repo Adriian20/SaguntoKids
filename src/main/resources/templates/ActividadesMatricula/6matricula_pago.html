@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagunto Kids</title>
+    <link rel="stylesheet" th:href="@{/css/general.css}" />
+    <link rel="stylesheet" th:href="@{/css/especifico_matricula.css}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa" />
+</head>
+
+<body>
+    <main>
+        <p>Introduce datos de pago:</p>
+        <div class="pago2">
+            <div>
+                <p>TITULAR</p>
+                <input type="text"></input>
+            </div>
+            <div>
+                <p>NUMERO</p>
+                <input type="text"></input>
+            </div>
+            <div>
+                <p>CADUCIDAD</p>
+                <input type="text"></input>
+            </div>
+            <div>
+                <p>CVC</p>
+                <input type="text"></input>
+            </div>
+            <div>
+                <p>Importe a abonar: </p>
+                <button>precio</button>
+            </div>
+            <div>
+                <input type="checkbox"></input>
+                <p>Acepto el pago y la domiciliación bancaria por parte de la empresa</p>
+            </div>
+            <a th:href="@{/mat}"><button>Cancelar</button></a>
+            <a th:href="@{/matAvi}"><button>Continuar</button></a>
+        </div>
+    </main>
+</body>
+
+</html>

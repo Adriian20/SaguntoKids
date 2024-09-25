@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" th:href="@{css/general.css}">
+    <link rel="stylesheet" th:href="@{css/form-nuevoU.css}">
+    <title>Registro de usuario</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa">
+</head>
+
+<body>
+    <header th:replace="~{base :: header}"></header>
+    <nav th:replace="~{base :: nav}"></nav>
+    <main>
+        
+        <section>
+            <hr>
+            <h2>REGISTRO USUARIO</h2>
+            <hr>
+        </section>
+
+        <br><br>
+        <h2>RELLENA LOS DATOS</h2>
+
+        <section id="registroU">
+            <div id="nomb">
+                <p>Nombre</p>
+                <input type="text" id="nombre">
+            </div>
+            <div id="apel">
+                <p>Apellidos</p>
+                <input type="text" id="apellidos">
+            </div>
+            <div id="direcc">
+                <p>Dirección</p>
+                <input type="text" id="direccion">
+            </div>
+            <div id="CPostal">
+                <p>Código Postal</p>
+                <input type="text" id="codigoPostal">
+            </div>
+            <div id="correo">
+                <p>Email</p>
+                <input type="text" id="correoElectronico">
+            </div>
+            <div id="num">
+                <p>Teléfono</p>
+                <input type="text" id="telefono">
+            </div>
+            <div id="password">
+                <p>Contraseña</p>
+                <input type="password" id="contrasenya">
+            </div>
+            <div id="passwordc">
+                <p>Confirmar Contraseña</p>
+                <input type="password" id="contrasenya2">
+            </div>
+            <div id="cbancaria">
+                <p>Cuenta Bancaria</p>
+                <input type="text" id="cuentaBancaria">
+            </div>
+
+            <div id="dosPasos">
+                <input type="checkbox" id="verificacion" name="dPasos" value="dosPasos" />
+                <a th:href="@{/dosPasos}">Activar verificación en 2 pasos</a>
+            </div>
+            <div id="terminos">
+                <input type="checkbox" id="term" name="terminosCond" value="terminosC" />
+                <a th:href="@{/terminos}">Acepto los terminos y condiciones</a>
+            </div>
+        </section>
+
+
+        <!--CAMBIAR POR BOTONES-->
+        <div id="abajo">
+            <button id="btnRegistrarse">REGISTRARSE</button>
+            <h5>volver</h5>
+        </div>
+    </main>
+    <footer th:replace="~{base :: footer}"></footer>
+    <script th:src="@{/js/nav.js}"></script>
+    <script th:src="@{/JavaScript/Jquery.js}"></script>
+    <script th:src="@{/js/registrarUsuario.js}"></script>
+</body>
+
+</html>

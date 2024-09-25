@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagunto Kids</title>
+    <link rel="stylesheet" th:href="@{/css/general.css}" />
+    <link rel="stylesheet" th:href="@{/css/especifico_matricula.css}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa" />
+</head>
+
+<body>
+    <main>
+        <p>ESTAS MATRICULANDO A </p>
+        <div class="matricula">
+            <button>Nombre 1</button>
+            <div class="centrar">
+                <h5>grupo</h5>
+                <h5>dias</h5>
+                <h5>curso</h5>
+            </div>
+            <div>
+                <p>A pagar ahora:</p>
+                <button>precio</button>
+            </div>
+            <a th:href="@{/quiMat}"><button>Cancelar</button></a>
+            <a th:href="@{/matPag}"><button>Continuar</button></a>
+        </div>
+    </main>
+</body>
+
+</html>

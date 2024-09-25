@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Sesión</title>
+    <link rel="stylesheet" th:href="@{/css/general.css}" />
+    <link rel="stylesheet" th:href="@{/css/inicioSesionEmpresa.css}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa">
+</head>
+
+<body>
+    <header th:replace="~{base :: header}"></header>
+    <nav th:replace="~{base :: nav}"></nav>
+
+    <main>
+        <section>
+            <p>CIF</p>
+            <input type="text" id="cif">
+            <span class="errorCif"></span>
+            <p>CONTRASEÑA</p>
+            <input type="password" id="contr">
+            <span class="errorContr"></span>
+            <a th:href="@{recuContrEmpresa}">He olvidado la contraseña</a>
+            <button id="btnIniciarSesion">INICIAR SESIÓN</button>
+            <span class="error"></span>
+        </section>
+        <a th:href="@{/paginaPrincipal}">Volver</a>
+    </main>
+
+    <footer th:replace="~{base :: footer}"></footer>
+
+    <script src="http://code.jquery.com/jquery-3.7.1.js"> </script>
+    <script th:src="@{/js/nav.js}"></script>
+    <script th:src="@{/js/loginEmpresa.js}"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagunto Kids</title>
+    <link rel="stylesheet" th:href="@{/css/general.css}" />
+    <link rel="stylesheet" th:href="@{/css/especifico_matricula.css}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa" />
+</head>
+
+<body>
+    <main>
+        <p>¿A QUIÉN QUIERES MATRICULAR?</p>
+        <div class="selMatricula">
+            <button>Nombre 1</button>
+            <button>Nombre 2</button>
+            <a th:href="@{/CreaPerf}"><button>Crear nuevo perfil</button></a>
+            <a th:href="@{/infAct}"><button>Cancelar</button></a>
+            <a th:href="@{/mat}"><button>Continuar</button></a>
+        </div>
+    </main>
+
+</body>
+
+</html>

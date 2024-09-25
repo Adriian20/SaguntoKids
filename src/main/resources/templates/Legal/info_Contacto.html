@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="imgs/favicon-32x32.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sagunto Kids</title>
+    <link rel="stylesheet" th:href="@{css/general.css}">
+    <link rel="stylesheet" th:href="@{css/especifico.css}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa">
+
+</head>
+
+<body>
+    <header th:replace="~{base :: header}"></header>
+    <nav th:replace="~{base :: nav}"></nav>
+    <main>
+        <hr>
+        <h3>CONTACTO</h3>
+        <hr>
+
+        <p>Puedes contactarnos por:</p>
+
+        <div>
+            <img th:src="@{imgs/tlf.png}" alt="telefono" />
+            <p><b>Teléfono: 962666666</b></p>
+        </div>
+        <div>
+            <img th:src="@{imgs/whatsapp.png}" alt="what" />
+            <p><b>WhatsApp: 666666666</b></p>
+
+        </div>
+        <div>
+            <img th:src="@{imgs/email.png}" alt="email" />
+            <p><b>Email: saguntokids@gmail.com</b></p>
+
+        </div>
+
+
+        <p>En horario de lunes a viernes de 9:00h a 15:00h</p>
+
+        <H5>PROBANDO PÁGINAS</H5>
+        <a th:href="@{/Usuarios}" target="_self">Crear perfil</a>
+
+
+
+
+        <a th:href="@{/paginaPrincipal}">Volver</a>
+    </main>
+    <footer th:replace="~{base :: footer}"></footer>
+
+</body>
+
+</html>

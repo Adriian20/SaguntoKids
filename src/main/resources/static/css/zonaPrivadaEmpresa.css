@@ -1,0 +1,170 @@
+body {
+    background-color: #f2f2f2;
+}
+
+main>section {
+    text-align: left;
+    border: 3px solid #2DB15E;
+    padding: 3%;
+    display: grid;
+    overflow: auto;
+    background-color: white;
+}
+
+main>section:first-of-type {
+    grid-template-areas:
+        'idEmpresa idEmpresa'
+        'nombre cif'
+        'direccion direccion'
+        'email telefono'
+        'cuentaBanc img'
+        'tipoAct img'
+        'desc desc'
+        'btn btn';
+}
+
+section div:nth-of-type(1) {
+    grid-area: idEmpresa;
+}
+
+section div:nth-of-type(2) {
+    grid-area: cif;
+}
+
+section div:nth-of-type(3) {
+    grid-area: nombre;
+}
+
+section div:nth-of-type(4) {
+    grid-area: direccion;
+}
+
+section div:nth-of-type(5) {
+    grid-area: email;
+}
+
+section div:nth-of-type(6) {
+    grid-area: cuentaBanc;
+}
+
+section div:nth-of-type(7) {
+    grid-area: tipoAct;
+}
+
+section div:nth-of-type(8) {
+    grid-area: telefono;
+}
+
+section div:nth-of-type(9) {
+    grid-area: img;
+}
+
+section div:nth-of-type(10) {
+    grid-area: desc;
+}
+
+section div:nth-of-type(11) {
+    grid-area: btn;
+}
+
+section div:nth-of-type(4) input[type="text"] {
+    width: 350px;
+}
+
+input[type="text"] {
+    border: 1px solid #2DB15E;
+    height: 25px;
+    font-size: medium;
+    width: 95%;
+}
+
+textarea {
+    width: 99%;
+    height: 155px;
+    border-radius: 8px;
+    border: 1px solid #2DB15E;
+}
+
+section>div:last-of-type {
+    text-align: center;
+}
+
+section:last-of-type button:last-of-type {
+    background-color: #F45E3E;
+}
+
+main>div {
+    text-align: center;
+}
+
+.actividadEmpresa {
+    border: #2DB15E 3px solid;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    padding: 15px;
+    min-width: 600px;
+    margin-bottom: 20px;
+}
+
+.actividadEmpresa>img {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+    margin: 15px;
+}
+
+.actividadEmpresa>h3 {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+}
+
+.actividadEmpresa>div:nth-of-type(1) {
+    grid-column: 2/-1;
+    grid-row: 2/3;
+}
+
+.actividadEmpresa>p:nth-of-type(1) {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+}
+
+.actividadEmpresa>a {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+span {
+    margin-top: 5px;
+    color: red;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: Comfortaa;
+    font-weight: bold;
+}
+
+main>section:first-of-type div:nth-of-type(1) input[type="text"] {
+    width: 97.5%;
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        padding: 2% 20% 5% 20%;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        height: 30px;
+        font-size: large;
+    }
+
+    textarea {
+        height: 150px;
+    }
+}

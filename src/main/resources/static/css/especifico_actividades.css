@@ -1,0 +1,128 @@
+main>a {
+    color: #3C3C3C
+}
+
+.centrar {
+    text-align: center;
+}
+
+.actividad {
+    border: #2DB15E 3px solid;
+    background-color: #F5F5F5;
+    margin: 15px;
+    padding: 15px;
+}
+
+.actividad>div {
+    padding: 15px;
+    min-height: 240px;
+}
+
+.actividad>div>* {
+    padding-left: 10px;
+}
+
+.actividad>div>img {
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    float: left;
+    padding-left: 0px;
+}
+
+.actividad>div>img::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.actividad>p:nth-of-type(1) {
+    margin-left: 30px;
+}
+
+.actividad>a {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.minActividad {
+    border: #2DB15E 3px solid;
+    background-color: #F5F5F5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 5fr 3fr;
+    margin: 15px;
+    padding: 15px;
+    min-width: 250px;
+
+}
+
+.minActividad>h2 {
+    grid-row: 1;
+    grid-column: 2;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minActividad>img {
+    grid-row: 2;
+    grid-column: 2;
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.minActividad>div {
+    grid-row: 3;
+    grid-column: 2;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.indexBody aside {
+    max-width: 20%;
+    border: 3px solid #FFDC64;
+    min-width: 210px;
+    margin: 15px;
+}
+
+.indexBody aside div {
+    display: flex;
+}
+
+.indexBody aside input[type="checkbox"] {
+    margin-left: 15px;
+}
+
+.indexBody section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.indexBody section:nth-of-type(1) {
+    justify-content: space-evenly;
+}
+
+.indexBody section:nth-of-type(1) article {
+    border: 10px solid #453DAA;
+    background: #FFDC64;
+    margin: 10px;
+    width: 500px;
+}
+
+.indexBody section:nth-of-type(1) img {
+    height: 200px;
+    width: 250px;
+    margin: 15px;
+    background-color: aqua;
+}
+
+.indexBody section:nth-of-type(1) {
+    text-align: center;
+}

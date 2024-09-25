@@ -1,0 +1,73 @@
+body {
+    background-color: #f2f2f2;
+}
+
+section {
+    border: 3px solid #2DB15E;
+    padding: 5%;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+p {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 155px;
+    margin: 0 auto;
+    height: 25px;
+    font-size: medium;
+}
+
+section>a {
+    color: black;
+    margin: 2% auto;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 0 auto;
+}
+
+main {
+    min-width: 300px;
+    text-align: center;
+}
+
+main>a {
+    color: black;
+}
+
+.errorCif,
+.errorContr,
+.error {
+    margin-top: 5px;
+    color: red;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: Comfortaa;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        padding: 2% 25% 5% 25%;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 95%;
+        height: 30px;
+        font-size: large;
+    }
+
+    span {
+        padding: 3% 0 3% 0;
+    }
+}

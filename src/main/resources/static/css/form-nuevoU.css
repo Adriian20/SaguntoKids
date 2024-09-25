@@ -1,0 +1,115 @@
+#registroU {
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #453DAA;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+#nomb {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+#apel {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+}
+
+#direcc {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+#CPostal {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+#correo {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+#num {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+#password {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+#passwordc {
+    grid-column: 3 / 5;
+    grid-row: 4 / 5;
+}
+
+#cbancaria {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+}
+
+#titular {
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
+}
+
+#tnum {
+    grid-column: 1 / 3;
+    grid-row: 7 / 8;
+}
+
+#cad {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+}
+
+#cv {
+    grid-column: 2 / 3;
+    grid-row: 8 / 9;
+}
+
+#dosPasos {
+    grid-column: 2 / 4;
+    grid-row: 9 / 10;
+}
+
+#terminos {
+    grid-column: 2 / 4;
+    grid-row: 10 / 11;
+}
+
+#ver {
+    width: auto;
+}
+
+#term {
+    width: auto;
+}
+
+
+#dosPasos>a {
+    color: black;
+}
+
+#terminos>a {
+    color: black;
+}
+
+
+
+#abajo {
+    text-align: center;
+}
+
+body {
+    background-color: #f2f2f2;
+}

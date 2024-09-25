@@ -1,0 +1,106 @@
+<head th:fragment="head">
+    <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" th:href="@{/imgs/favicon-32x32.png}" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sagunto Kids</title>
+    <link rel="stylesheet" th:href="@{/css/general.css}" />
+    <link rel="stylesheet" th:href="@{/css/especifico_actividades.css}" />
+    <link rel="stylesheet" th:href="@{https://fonts.googleapis.com/css2?family=Lexend}" />
+    <link rel="stylesheet" th:href="@{https://fonts.googleapis.com/css2?family=Comfortaa}" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<head th:fragment="head_legal">
+    <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" th:href="@{/imgs/favicon-32x32.png}" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sagunto Kids</title>
+    <link rel="stylesheet" th:href="@{/css/general.css}" />
+    <link rel="stylesheet" th:href="@{/css/especifico_legal.css}" />
+    <link rel="stylesheet" th:href="@{https://fonts.googleapis.com/css2?family=Lexend}" />
+    <link rel="stylesheet" th:href="@{https://fonts.googleapis.com/css2?family=Comfortaa}" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<head th:fragment="head_perfil">
+    <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" th:href="@{/imgs/favicon-32x32.png}" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sagunto Kids</title>
+    <link rel="stylesheet" th:href="@{/css/general.css}" />
+    <link rel="stylesheet" th:href="@{/css/especifico_perfil.css}" />
+    <link rel="stylesheet" th:href="@{https://fonts.googleapis.com/css2?family=Lexend}" />
+    <link rel="stylesheet" th:href="@{https://fonts.googleapis.com/css2?family=Comfortaa}" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<header th:fragment="header">
+    <div class="button-container">
+        <button class="nav-button" aria-controls="nav" aria-expanded="false" aria-label="Menú">
+            <div>
+                <img th:src="@{/imgs/hamburguesa.png}" alt="hamburguesa">
+            </div>
+            <div></div>
+        </button>
+    </div>
+    <div>
+        <img th:src="@{/imgs/logoSaguntoKids.png}" alt="logo">
+
+    </div>
+    <div style="display: inline-block;">
+        <a th:href="@{/registroComo}">
+            <img th:src="@{/imgs/login.png}" alt="login">
+            <p></p>
+        </a>
+    </div>
+</header>
+
+<!-- menu -->
+<nav th:fragment="nav">
+    <ul id="nav" data-visible="false">
+        <li>
+            <a th:href="@{/paginaPrincipal}" target="_self">Listado de actividades</a>
+        </li>
+        <li>
+            <a th:href="@{/infoSag}" target="_self">Sobre Sagunto Kids</a>
+        </li>
+        <li>
+            <a th:href="@{/infoPrograma}" target="_self">Información del programa</a>
+        </li>
+        <li>
+            <a href="http://saguntoempresarial.sagunto.es/" target="_blank">Sagunto empresarial</a>
+        </li>
+        <div>
+            <img th:src="@{/imgs/lupa.png}" alt="lupa">
+            <p>Búsqueda</p>
+        </div>
+    </ul>
+</nav>
+
+<footer th:fragment="footer">
+    <div>
+        <img id="logoA" th:src="@{/imgs/ayto.png}" alt="logo_ayto">
+        <div>
+            <a th:href="@{/infoContacto}" target="_self">
+                <img th:src="@{/imgs/email.png}" alt="email" />
+            </a>
+            <p>saguntokids@gmail.com</p>
+        </div>
+        <div>
+            <a th:href="@{/infoPreg}" target="_self">Preguntas frecuentes</a>
+            <a th:href="@{/infoPago}" target="_self">Métodos de pago</a>
+            <a th:href="@{/infoTermCond}" target="_self">Términos y condiciones</a>
+            <a th:href="@{/infoProtec}" target="_self">Protección de datos</a>
+        </div>
+        <div>
+            <p>Copyright</p>
+            <img th:src="@{/imgs/copyright.png}" alt="copyright">
+            <p>2024</p>
+        </div>
+        <div>
+            <img th:src="@{/imgs/face.png}" alt="face">
+            <img th:src="@{/imgs/insta.png}" alt="insta">
+            <img th:src="@{/imgs/X.png}" alt="twitter">
+        </div>
+    </div>
+</footer>

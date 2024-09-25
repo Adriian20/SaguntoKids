@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<html xmlns:th="http://www.thymeleaf.org">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona Privada Empresa</title>
+    <link rel="stylesheet" th:href="@{/css/general.css}">
+    <link rel="stylesheet" th:href="@{/css/zonaPrivadaEmpresa.css}">
+    <link rel="stylesheet" th:href="@{/css/especifico_actividades.css}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa">
+</head>
+
+<body>
+    <header th:replace="~{base :: header}"></header>
+    <nav th:replace="~{base :: nav}"></nav>
+
+    <main>
+        <h3>DATOS</h3>
+        <section>
+            <div>
+                <p>ID Empresa</p>
+                <input type="text" id="id" readonly>
+            </div>
+
+            <div>
+                <p>CIF</p>
+                <input type="text" id="cif" readonly>
+            </div>
+
+            <div>
+                <p>Nombre empresa</p>
+                <input type="text" id="nombre">
+                <br>
+                <span class="errorNombre"></span>
+            </div>
+
+            <div>
+                <p>Dirección</p>
+                <input type="text" id="direccion">
+                <br>
+                <span class="errorDireccion"></span>
+            </div>
+
+            <div>
+                <p>Email</p>
+                <input type="text" id="email">
+                <br>
+                <span class="errorEmail"></span>
+            </div>
+
+            <div>
+                <p>Cuenta Bancaria</p>
+                <input type="text" id="cuenta">
+                <br>
+                <span class="errorCuentaBancaria"></span>
+            </div>
+
+            <div>
+                <p>Tipo Actividad</p>
+                <input type="text" id="actividad" readonly>
+            </div>
+
+            <div>
+                <p>Teléfono</p>
+                <input type="text" id="tel">
+                <br>
+                <span class="errorTel"></span>
+            </div>
+
+            <div hidden>
+                <p>Imagen</p>
+            </div>
+
+            <div>
+                <p>Descripción de la empresa</p>
+                <textarea id="desc"></textarea>
+                <br>
+                <span class="errorDesc"></span>
+            </div>
+
+            <div>
+                <button id="btnEditarEmpresa">Actualizar datos</button>
+            </div>
+        </section>
+        <article>
+            <hr>
+            <h4>ACTIVIDADES DE LA EMPRESA</h4>
+            <hr>
+        </article>
+        <div>
+            <a th:href="@{/actividades/crearActividad}"><button>CREAR NUEVO CURSO</button></a>
+        </div>
+    </main>
+
+    <footer th:replace="~{base :: footer}"></footer>
+    <script src="http://code.jquery.com/jquery-3.7.1.js"> </script>
+    <script th:src="@{/js/nav.js}"></script>
+    <script th:src="@{/js/verEmpresa.js}"></script>
+    <script th:src="@{/js/updateEmpresa.js}"></script>
+    <script type="module" th:src="@{/js/verActividadesEmpresa.js}"></script>
+</body>
+
+</html>

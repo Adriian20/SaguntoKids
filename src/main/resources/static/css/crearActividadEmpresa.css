@@ -1,0 +1,78 @@
+body {
+    background-color: #f2f2f2;
+}
+
+section {
+    text-align: left;
+    border: 3px solid #2DB15E;
+    padding: 5%;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+textarea {
+    height: 310px;
+    border-radius: 8px;
+    border: 1px solid #2DB15E;
+}
+
+button {
+    margin: 15px auto;
+}
+
+main a {
+    color: black;
+    margin: 2% auto;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    text-align: center;
+}
+
+input[type="text"] {
+    height: 30px;
+    font-size: large;
+    width: 100%;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    border-radius: 8px;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+span {
+    margin-top: 5px;
+    color: red;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: Comfortaa;
+    font-weight: bold;
+}
+
+select {
+    height: 25px;
+    border-radius: 8px;
+    border: 1px solid #2DB15E;
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        padding: 2% 20% 5% 20%;
+    }
+
+    textarea {
+        height: 150px;
+    }
+}

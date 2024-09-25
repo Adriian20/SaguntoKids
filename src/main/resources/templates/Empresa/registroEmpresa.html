@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Empresa</title>
+    <link rel="stylesheet" th:href="@{/css/general.css}" />
+    <link rel="stylesheet" th:href="@{/css/registroEmpresa.css}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa">
+</head>
+
+<body>
+    <header th:replace="~{base :: header}"></header>
+    <nav th:replace="~{base :: nav}"></nav>
+
+    <main>
+        <h3>RELLENA LOS DATOS</h3>
+        <section>
+            <div>
+                <p for="nombre">Nombre de la empresa</p>
+                <input id="nombre" type="text">
+                <br>
+                <span class="errorNombre"></span>
+            </div>
+
+            <div>
+                <p for="direccion">Dirección</p>
+                <input id="direccion" type="text">
+                <br>
+                <span class="errorDireccion"></span>
+            </div>
+
+            <div>
+                <p for="email">Email</p>
+                <input id="email" type="text">
+                <br>
+                <span class="errorEmail"></span>
+            </div>
+
+            <div>
+                <p for="contr">Contraseña</p>
+                <input id="contr" type="password">
+                <br>
+                <span class="errorContr"></span>
+            </div>
+
+            <div>
+                <p for="contr2">Repite Contraseña</p>
+                <input id="contr2" type="password">
+                <br>
+                <span class="errorContr2"></span>
+            </div>
+
+            <div>
+                <p for="cuentaBancaria">Cuenta bancaria</p>
+                <input id="cuentaBancaria" type="text">
+                <br>
+                <span class="errorCuentaBancaria"></span>
+            </div>
+
+            <div>
+                <p for="cif">CIF</p>
+                <input id="cif" type="text">
+                <br>
+                <span class="errorCif"></span>
+            </div>
+
+            <div>
+                <p for="tlfn">Teléfono</p>
+                <input id="tlfn" type="text">
+                <br>
+                <span class="errorTelefono"></span>
+            </div>
+
+            <div>
+                <p>Tipo de actividad:</p>
+                <select id="categorias">
+                    <option value="">Elige</option>
+                    <option value="Formativa">Formativa</option>
+                    <option value="Deportiva">Deportiva</option>
+                </select>
+                <br>
+                <span class="errorActividad"></span>
+            </div>
+
+            <div>
+                <p>Imagen</p>
+                <div>
+                    <label>
+                        <input type="file" id="img" accept="image/*">
+                        Subir imagen
+                    </label>
+                    <img src="" alt="Vista previa de la imagen" id="previewImage" style="max-width: 100px;">
+                    <br>
+                    <span class="errorImg"></span>
+                </div>
+            </div>
+
+            <div>
+                <p for="desc">Descripción de la empresa</p>
+                <textarea id="desc"></textarea>
+                <br>
+                <span class="errorDesc"></span>
+            </div>
+
+            <div>
+                <p><input type="checkbox" id="terminosCond">Acepto los <u>términos y condiciones</u></p>
+                <br>
+                <span class="errorTerminos"></span>
+            </div>
+
+        </section>
+
+        <div>
+            <button id="btnRegistrarse">REGISTRARSE</button>
+            <a th:href="@{/paginaPrincipal}">Volver</a>
+        </div>
+    </main>
+
+    <footer th:replace="~{base :: footer}"></footer>
+    <script src="http://code.jquery.com/jquery-3.7.1.js"> </script>
+    <script type="text/javascript" th:src="@{/js/nav.js}"></script>
+    <script type="text/javascript" th:src="@{/js/registerEmpresa.js}"></script>
+</body>
+
+</html>

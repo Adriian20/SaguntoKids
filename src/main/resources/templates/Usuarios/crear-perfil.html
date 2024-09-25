@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head th:replace="~{base :: head_perfil}"></head>
+<body>
+<header th:replace="~{base :: header}"></header>
+<nav th:replace="~{base :: nav}"></nav>
+
+<main>
+
+    <section>
+        <hr>
+        <h2>CREAR PERFIL</h2>
+        <hr>
+    </section>
+
+    <section>
+        <h2>RELLENA LOS DATOS</h2>
+
+        <div>
+            <!-- Formulario crear perfil -->
+            <form id="form-crearP">
+                <h3>Nombre</h3>
+                <input type="text" id="nom" placeholder="">
+
+                <div>
+                    <h3>Apellidos</h3>
+                    <input type="text" id="ape" placeholder="">
+                </div>
+
+                <div>
+                    <h3>Curso</h3>
+                    <option value="Elige:">Elige</option>
+                    <select name="curs" id="curso">
+                        <option value="1inf">1º Infantil</option>
+                        <option value="2inf">2º Infantil</option>
+                        <option value="3inf">3º Infantil</option>
+                        <option value="1pri">1º Primaria</option>
+                        <option value="2pri">2º Primaria</option>
+                        <option value="3pri">3º Primaria</option>
+                        <option value="4pri">4º Primaria</option>
+                        <option value="5pri">5º Primaria</option>
+                        <option value="6pri">6º Primaria</option>
+                        <option value="1eso">1º ESO</option>
+                        <option value="2eso">2º ESO</option>
+                        <option value="1eso">3º ESO</option>
+                        <option value="2eso">4º ESO</option>
+                        <option value="1bac">1º Bachillerato</option>
+                        <option value="2bac">2º Bachillerato</option>
+                    </select>
+
+                </div>
+                <div>
+                    <h3>Tipo de actividad</h3>
+                    <option value="Elige:">Elige</option>
+                    <select name="Elige_act" id="t-act">
+                        <option value="ambas">Ambas</option>
+                        <option value="deportivas">Deportivas</option>
+                        <option value="formativas">Formativas</option>
+                    </select>
+                </div>
+
+                <div>
+                    <h3>Cantidad de días de la actividad</h3>
+                    <select name="cantidad_dias" id="cantD">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+
+
+                <div>
+                    <h3>Disponibilidad</h3>
+                    <div>
+                        <h4>Lunes</h4>
+                        <label for="horaInicioLunes">Hora inicio </label>
+                        <select name="Lunes" id="Lunes_inicio">
+                            <option value="">Sin disponibilidad</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                        </select>
+                        <label for="horaFinLunes">Hora fin </label>
+                        <select name="Lunes" id="Lunes_fin">
+                            <option value="">Sin disponibilidad</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <h4>Martes</h4>
+                        <label for="horaInicioMartes">Hora inicio </label>
+                        <select name="Martes" id="Martes_inicio">
+                            <option value="">Sin disponibilidad</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                        </select>
+                        <label for="horaFinMartes">Hora fin </label>
+                        <select name="Martes" id="Martes_fin">
+                            <option value="">Sin disponibilidad</option>
+
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h4>Miércoles</h4>
+                        <label for="horaInicioMiercoles">Hora inicio </label>
+                        <select name="Miercoles" id="Miercoles_inicio">
+                            <option value="">Sin disponibilidad</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                        </select>
+                        <label for="horaFinMiercoles">Hora fin </label>
+                        <select name="Miercoles" id="Miercoles_fin">
+                            <option value="">Sin disponibilidad</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h4>Jueves</h4>
+                        <label for="horaInicioJueves">Hora inicio </label>
+                        <select name="Jueves" id="Jueves_inicio">
+                            <option value="">Sin disponibilidad</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                        </select>
+                        <label for="horaFinJueves">Hora fin </label>
+                        <select name="Jueves" id="Jueves_fin">
+                            <option value="">Sin disponibilidad</option>
+
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                        </select>
+                    </div>
+                        <div>
+
+                            <h4>Viernes</h4>
+                            <label for="horaInicioViernes">Hora inicio </label>
+                            <select name="Viernes" id="Viernes_inicio">
+                                <option value="">Sin disponibilidad</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                            </select>
+                            <label for="horaInicioviernes">Hora fin </label>
+                            <select name="Viernes" id="Viernes_fin">
+                                <option value="">Sin disponibilidad</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                            </select>
+
+                        </div>
+                        <div>
+
+                            <h4>Sábado</h4>
+
+                            <label for="horaInicioSabado">Hora inicio </label>
+                            <select name="Sabado" id="Sabado_inicio">
+                                <option value="">Sin disponibilidad</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                            </select>
+                            <label for="horaInicioSabado">Hora fin </label>
+                            <select name="Sabado" id="Sabado_fin">
+                                <option value="">Sin disponibilidad</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <button id="botonRegistro" class="botonRegistro">CREAR PERFIL</button>
+                    <button id="botonActualizar" class="botonActualizar">Actualizar</button>
+
+            </form>
+        </div>
+    </section>
+
+    <script th:src="@{/js/perfiles.js}"></script>
+    <a th:href="@{/paginaPrincipal}">Volver</a>
+
+</main>
+<footer th:replace="~{base :: footer}"></footer>
+
+
+</body>
+
+
+

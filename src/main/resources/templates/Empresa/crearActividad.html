@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Curso</title>
+    <link rel="stylesheet" th:href="@{/css/general.css}" />
+    <link rel="stylesheet" th:href="@{/css/crearActividadEmpresa.css}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa">
+</head>
+
+<body>
+    <header th:replace="~{base :: header}"></header>
+    <nav th:replace="~{base :: nav}"></nav>
+
+    <main>
+        <section>
+            <h3>DATOS DEL CURSO</h3>
+            <p>Curso ofertado</p>
+            <input type="text" id="nombre">
+            <br>
+            <span class="errorNombre"></span>
+
+            <p>Dias</p>
+            <input type="text" id="dias">
+            <br>
+            <span class="errorDias"></span>
+
+            <p>Cantidad de Dias</p>
+            <input type="text" id="diasCant">
+            <br>
+            <span class="errorDiasCant"></span>
+
+            <p>Horario</p>
+            <input type="text" id="horario">
+            <br>
+            <span class="errorHorario"></span>
+
+            <p>Imagen</p>
+            <div>
+                <label>
+                    <input type="file" id="img" accept="image/*">
+                    Subir imagen
+                </label>
+                <img src="" alt="Vista previa de la imagen" id="previewImage" style="max-width: 100px;">
+                <span class="errorImg"></span>
+            </div>
+
+            <p>Curso</p>
+            <select id="curso">
+                <option value="">Elige</option>
+                <option value="I1"> Primero de infantil</option>
+                <option value="I2"> Segundo de infantil</option>
+                <option value="I3"> Tercero de infantil</option>
+                <option value="P1"> Primero de primaria</option>
+                <option value="P2"> Segundo de primaria</option>
+                <option value="P3"> Tercero de primaria</option>
+                <option value="P4"> Cuarto de primaria</option>
+                <option value="P5"> Quinto de primaria</option>
+                <option value="P6"> Sexto de primaria</option>
+                <option value="E1"> Primero de la ESO</option>
+                <option value="E2"> Segundo de la ESO</option>
+                <option value="E3"> Tercero de la ESO</option>
+                <option value="E4"> Cuarto de la ESO</option>
+                <option value="B1"> Primero de bachiller</option>
+                <option value="B2"> Segundo de bachiller</option>
+            </select>
+            <span class="errorCurso"></span>
+
+            <p>Explicación del curso</p>
+            <textarea id="desc"></textarea>
+            <br>
+            <span class="errorDesc"></span>
+
+            <p>Precio</p>
+            <input type="text" id="precio">
+            <br>
+            <span class="errorPrecio"></span>
+
+            <p>Matrícula</p>
+            <input type="text" id="matricula">
+            <br>
+            <span class="errorMatricula"></span>
+
+            <p>Tipo de actividad:</p>
+            <select id="categorias">
+                <option value="">Elige</option>
+                <option value="Formativa">Formativa</option>
+                <option value="Deportiva">Deportiva</option>
+            </select>
+            <span class="errorActividad"></span>
+
+            <button type="button" id="btnCrearActividad">Crear Actividad</button>
+            <button type="button" id="btnEditarActividad">Editar Actividad</button>
+        </section>
+        <a th:href="@{/paginaPrincipal}">Volver</a>
+    </main>
+
+    <footer th:replace="~{base :: footer}"></footer>
+    <script src="http://code.jquery.com/jquery-3.7.1.js"> </script>
+    <script th:src="@{/js/nav.js}"></script>
+    <script th:src="@{/js/crearActividad.js}"></script>
+    <script th:src="@{/js/verActividad.js}"></script>
+    <script th:src="@{/js/editarActividad.js}"></script>
+</body>
+
+</html>

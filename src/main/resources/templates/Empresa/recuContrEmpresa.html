@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" th:href="@{/css/general.css}" />
+    <link rel="stylesheet" th:href="@{/css/recuContrEmpresa.css}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa">
+</head>
+
+<body>
+    <header th:replace="~{base :: header}"></header>
+    <nav th:replace="~{base :: nav}"></nav>
+
+    <main>
+        <section>
+            <h3>RECUPERA CONTRASEÑA</h3>
+            <p>Introduce el CIF</p>
+            <input type="text" id="cif">
+            <span id="errorCif"></span>
+            <p>Introduce la nueva contraseña</p>
+            <input type="password" id="contr">
+            <span id="errorContr"></span>
+            <p>Vuelve a introducir la nueva contraseña</p>
+            <input type="password" id="contr2">
+            <span id="errorContr2"></span>
+            <button type="button" id="btnRecuperarContr">RESTABLECER</button>
+            <a th:href="@{/paginaPrincipal}">Volver</a>
+        </section>
+    </main>
+
+    <footer th:replace="~{base :: footer}"></footer>
+    <script src="http://code.jquery.com/jquery-3.7.1.js"> </script>
+    <script th:src="@{/js/nav.js}"></script>
+    <script th:src="@{/js/recuperarContrEmpresa.js}"></script>
+</body>
+
+</html>

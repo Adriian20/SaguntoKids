@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head th:replace="~{base :: head_legal}"></head>
+
+<body>
+    <header th:replace="~{base :: header}"></header>
+    <nav th:replace="~{base :: nav}"></nav>
+
+    <main>
+        <!-- LOS parrafos no se ven porque estan en display: none. Crear parrafos en display: block para esta página -->
+        <hr>
+        <h3>SOBRE SAGUNTO KIDS</h3>
+        <hr>
+        <p>En afán de mejorar la calidad de enseñanza en los núcleos urbanos nace Sagunto Kids. Una iniciativa creada
+            por el
+            ayuntamiento de Sagunto que pretende ser el altavoz para aquellas empresas de servicios en nuestra
+            localidad,
+            además de contribuir a la rganización de las familias.</p>
+        <h5>¿CÓMO SURGE ESTA IDEA?</h5>
+        <p>La idea original surge en el ámbito de Alcalde de barrio. Donde el propio ilustrisimo alcalde Dario Moreno se
+            acerca a los barrios para debatir acerca de las inquietudes de los vecinos. Aquí surgió la semilla de poder
+            unificar la oferta y demanda de actividades formativas para los jovenes de la ciudad. Publicitando, por un
+            lado,
+            a las empresas, y ayudando a las familias en la decisión en base a horarios.</p>
+        <h5>IMPLICACIÓN DE LAS EMPRESAS</h5>
+        <p> Para su aplicación se debía contar con una gran cantidad de empresas de los núcleos urbanos de Sagunto y el
+            Puerto.Por lo que el gobierno realizó un sondeo para llevar a cabo esta labor. La idea fue muy bien acogida.
+            El
+            siguiente paso era proponerlo para poder llevar a cabo la idea.
+            La votación aprobada por la gran mayoría de los partidos implicaba proponer esta iniciativa como parte del
+            proyecto Sagunto Empresarial, llevando un paso más allá este proyecto al ampliarlo a parte del sector
+            servicios. </p>
+
+        <h3>EQUIPO DE GOBIERNO</h3>
+        <img id="gob" th:src="@{/imgs/gobierno.jpg}" alt="gobierno">
+
+        <a th:href="@{/paginaPrincipal}">Volver</a>
+    </main>
+    <footer th:replace="~{base :: footer}"></footer>
+    <script th:src="@{/js/nav.js}"></script>
+
+</body>
+
+</html>

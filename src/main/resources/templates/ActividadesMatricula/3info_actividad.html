@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagunto Kids</title>
+    <link rel="stylesheet" th:href="@{/css/general.css}" />
+    <link rel="stylesheet" th:href="@{/css/especifico_actividades.css}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa" />
+</head>
+
+<body>
+    <header th:replace="~{base :: header}"></header>
+    <nav th:replace="~{base :: nav}"></nav>
+    <main>
+        <article>
+            <hr>
+            <h2>INFORMACION DEL CURSO</h2>
+            <hr>
+        </article>
+
+        <div></div>
+
+        <a th:href="@{/quiMat}"><button>Matricular</button></a>
+        <br>
+        <a th:href="@{/SaguntoKids}">Volver a actividades</a>
+    </main>
+    <footer th:replace="~{base :: footer}"></footer>
+    <script th:src="@{/js/nav.js}"></script>
+    <script type="module" th:src="@{/js/infAct.js}"></script>
+</body>
+
+</html>

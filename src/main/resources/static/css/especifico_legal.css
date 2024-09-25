@@ -1,0 +1,39 @@
+
+
+h5 {
+    color: #453DAA;
+    display: flex;
+    margin-bottom: 0;
+}
+
+img {
+    width: 20px;
+    align-self: last baseline;
+}
+
+section hr {
+    margin-top: 1px;
+    width: 100%;
+    border: 3px solid #453DAA;
+}
+/**/
+main section p{
+    display: none;
+    height: auto;
+    width: 90%;
+}
+h3 img{
+    max-width: 400px;
+}
+main a:first-of-type{
+    color: #3C3C3C;
+}
+section div{
+    display: flex;
+
+}
+#gob{
+   width: 100%;
+
+}
+

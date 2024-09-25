@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" th:href="@{/css/general.css}">
+    <link rel="stylesheet" th:href="@{/css/ZP.css}">
+    <title>Zona Privada</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa">
+</head>
+
+<body>
+    <header th:replace="~{base :: header}"></header>
+    <nav th:replace="~{base :: nav}"></nav>
+    <main>
+        <!-- Titulo naranja ZP -->
+        <section>
+            <hr>
+            <h2>ZONA PRIVADA</h2>
+            <hr>
+        </section>
+
+        <br><br>
+        <h2>DATOS</h2>
+
+        <!-- Formulario datos usuario -->
+        <section id="datosU">
+            <div id="nom">
+                <p>Nombre</p>
+                <input type="text" id="nombre">
+                <span class="errorNombre"></span>
+            </div>
+            <div id="ape">
+                <p>Apellidos</p>
+                <input type="text" id="apellidos">
+                <span class="errorApellidos"></span>
+            </div>
+            <div id="direc">
+                <p>Dirección</p>
+                <input type="text" id="direccion">
+                <span class="errorDireccion"></span>
+            </div>
+            <div id="CP">
+                <p>Código Postal</p>
+                <input type="text" id="codigoPostal">
+                <span class="errorCodigoPostal"></span>
+            </div>
+            <div id="email">
+                <p>Email</p>
+                <input type="text" id="correoElectronico">
+                <span class="errorCorreoElectronico"></span>
+            </div>
+            <div id="passwd">
+                <p>Contraseña</p>
+                <input type="password" id="password">
+                <span class="errorPassword"></span>
+            </div>
+            <div id="passwdc">
+                <p>Confirmar Contraseña</p>
+                <input type="password" id="password2">
+                <span class="errorPassword2"></span>
+            </div>
+            <div id="cbanc">
+                <p>Cuenta Bancaria</p>
+                <input type="text" id="cuentaBancaria">
+                <span class="errorCuentaBancaria"></span>
+            </div>
+            <div id="editar">
+                <h4 id="edit">EDITAR</h4>
+                <button id="guardarBtn" style="display:none;">Guardar cambios</button>
+            </div>
+        </section>
+
+
+        <br><br><br>
+        <!-- Titulo naranja PerfCre -->
+        <section>
+            <hr>
+            <h2>PERFILES CREADOS</h2>
+            <hr>
+        </section>
+        <br><br>
+        <!-- Lista perfiles de usuario -->
+
+        <section id="listaP">
+            <table>
+                <tr>
+                    <th>NOMBRE</th>
+                    <th>APELLIDOS</th>
+                    <th>EDITAR</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h5>nombre</h5>
+                    </td>
+                    <td>
+                        <h5>apellidos</h5>
+                    </td>
+                    <td>
+                        <a th:href="@{/Usuarios/crear-perfil}">
+                            <img th:src="@{/imgs/editar.png}" alt="Editar">
+                        </a>
+                    </td>
+                </tr>
+
+            </table>
+        </section>
+
+    </main>
+    <footer th:replace="~{base :: footer}"></footer>
+    <script th:src="@{/js/nav.js}"></script>
+    <script th:src="@{/JavaScript/Jquery.js}"></script>
+    <script th:src="@{/js/verZP.js}"></script>
+    <script th:src="@{/js/editarZP.js}"></script>
+</body>
+
+</html>

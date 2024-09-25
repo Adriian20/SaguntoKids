@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagunto Kids</title>
+    <link rel="stylesheet" th:href="@{/css/general.css}" />
+    <link rel="stylesheet" th:href="@{/css/especifico_actividades.css}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa" />
+</head>
+
+<body class="indexBody">
+    <header th:replace="~{base :: header}"></header>
+    <nav th:replace="~{base :: nav}"></nav>
+    <h2>¿Que tipo de actividad estás buscando?</h2>
+    <section>
+        <article>
+            <img>
+            <h3>ACTIVIDADES DEPORTIVAS</h3>
+        </article>
+        <article>
+            <img>
+            <h3>ACTIVIDADES FORMATIVAS</h3>
+        </article>
+    </section>
+    <hr>
+    <h2>Actividades populares</h2>
+    <hr>
+    <section>
+        <nav>
+            <h3>Perfiles:</h3>
+            <article>
+                <button>Perfil1</button>
+                <br>
+                <button>Perfil2</button>
+            </article>
+            <hr>
+            <h3>Tipo de actividad</h3>
+            <div>
+                <input type="checkbox">
+                <p>Formativa</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Deportiva</p>
+            </div>
+            <hr>
+            <h3>Curso:</h3>
+            <h4>Infantil</h4>
+            <div>
+                <input type="checkbox">
+                <p>1º</p>
+                <input type="checkbox">
+                <p>2º</p>
+                <input type="checkbox">
+                <p>3º</p>
+            </div>
+            <h4>Primaria</h4>
+            <div>
+                <input type="checkbox">
+                <p>1º</p>
+                <input type="checkbox">
+                <p>2º</p>
+                <input type="checkbox">
+                <p>3º</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>4º</p>
+                <input type="checkbox">
+                <p>5º</p>
+                <input type="checkbox">
+                <p>6º</p>
+            </div>
+            <h4>Secundaria</h4>
+            <div>
+                <input type="checkbox">
+                <p>1º</p>
+                <input type="checkbox">
+                <p>2º</p>
+                <input type="checkbox">
+                <p>3º</p>
+                <input type="checkbox">
+                <p>4º</p>
+            </div>
+            <h4>Bachillerato</h4>
+            <div>
+                <input type="checkbox">
+                <p>1º</p>
+                <input type="checkbox">
+                <p>2º</p>
+            </div>
+            <hr>
+            <h3>Dias de la semana:</h3>
+            <div>
+                <input type="checkbox">
+                <p>1</p>
+                <input type="checkbox">
+                <p>2</p>
+                <input type="checkbox">
+                <p>3</p>
+            </div>
+            <hr>
+            <h3>Disponibilidad</h3>
+            <div>
+                <input type="checkbox">
+                <p>Lunes</p>
+                <input type="checkbox">
+                <p>Jueves</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Martes</p>
+                <input type="checkbox">
+                <p>Viernes</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Miércoles</p>
+                <input type="checkbox">
+                <p>Sábado</p>
+            </div>
+            <hr>
+            <h3>Horario:</h3>
+            <div>
+                <input type="checkbox">
+                <p>16:00 - 17:00</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>17:00 - 18:00</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>18:00 - 19:00</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>19:00 - 20:00</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>20:00 - 21:00</p>
+            </div>
+            <hr>
+            <h3>Localización:</h3>
+            <input type="text" placeholder=" Direccion">
+            <p>O elige punto en el mapa:</p>
+            <iframe width="100%" height="150" frameborder="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=es&amp;q=puerto%20de%20sagunto+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            </iframe>
+            <hr>
+            <h3>Ordenar:</h3>
+            <div>
+                <input type="checkbox">
+                <p>Precio ascendente</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Precio descendente</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Populares</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Distancia</p>
+            </div>
+        </nav>
+        <main>
+            <article class="actividad">
+                <img>
+                <h3>FUTBOL</h3>
+                <p>info basica</p>
+                <p>info avanzada</p>
+                <button>MÁS INFORMACION</button>
+            </article>
+        </main>
+    </section>
+    <footer th:replace="~{base :: footer}"></footer>
+    <script th:src="@{/js/nav.js}"></script>
+</body>
+
+</html>
